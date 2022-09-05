@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <title>Douglas Vieira - Portfólio Pessoal</title>
+</head>
+<body>
+    <!-- Inicio da sessão responsável por mostrar o menu hamburguer -->
+    <header class="container-fluid bg-dark">
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <!-- Titulo externo do menu -->
+                <a class="navbar-brand">Portfólio Pessoal</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <!-- Titulo interno do menu -->
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu Principal</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <!-- Lista de links internos -->
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#douglas">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#sobre">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#skill">Habilidades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#form">Contatos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header><!-- Fim do bloco de menu -->
+    
+    <!-- Sessão contendo imagem de fundo e card com links para redes sociais -->
+    <section id="douglas" class="container-fluid text-center">
+        <!-- Área do card contendo foto de perfil, links e efeitos -->
+        <div id="card_douglas" class="row slide-in-elliptic-bottom-fwd">
+
+            <!-- Linha com imagem de perfil -->
+            <div class="row foto">
+                <figure>
+                    <img src="img/Douglas-Vieira.jpg" alt="Foto de perfil de Douglas Vieira">
+                </figure>
+            </div>
+            
+            <!-- Nome e profissões -->
+            <div class="row"><h1 class="focus-in-expand">DOUGLAS VIEIRA</h1></div>
+            <div class="row"><h2 class="font-monospace tracking-in-expand">Desenvolvedor Web e Designer UI/UX</h2></div>
+            
+            <!-- Links de redes sociais -->
+            <div class="row sociais">
+                <div class="col"><a href="https://api.whatsapp.com/send?phone=5561994458131" target="_blank"><img src="img/icons/whatsapp.svg" alt="WhatsApp"></a></div>
+                <div class="col"><a href="https://www.linkedin.com/in/douglasvs250/" target="_blank"><img src="img/icons/linkedin.svg" alt="Linkedin"></a></div>
+                <div class="col"><a href="https://github.com/douglasvs250" target="_blank"><img src="img/icons/github.svg" alt="Github"></a></div>
+                <div class="col"><a href="https://www.instagram.com/douglasvs250/" target="_blank"><img src="img/icons/instagram.svg" alt="Instagram"></a></div>
+            </div>
+        </div>
+    </section><!-- Fim da sessão -->
+
+    <!-- sessão que mostra as informações de sobre -->
+    <section id="sobre" class="container-fluid">
+        <div class="row">
+            <figure>
+                <img src="img/icons/pencil-square.svg">
+            </figure>
+        </div>
+        <div class="row">
+            <h1>Sobre</h1>
+        </div>
+        <hr class="linha1">
+        <hr class="linha2">
+        <br>
+        <div class="row sobre_mim">
+            <p>
+                Desenvolvedor Web e Designer UI/UX<br>
+                Cursando Analise e desenvolvimento de sistemas na UNINTER.
+            </p>
+            <p>
+                Na área de design tenho conhecimento nos produtos da adobe (Photoshop, Illustrator, InDesign After effects, Premiere, Audition e XD) e Figma.
+            </p>
+            <p>
+                E como Dev, meu conhecimento é em PHP, MySQL, HTML, CSS, JavaScript, jQuery, SEO, BootStrap, Wordpress, git e aprendendo C#, C++, nodeJs, docker, python e Java.
+            </p>
+            <p>
+                Também tenho conhecimentos adicionais em montagem e manutenção de computador e redes locais, eletrônica básica, manutenção de smartphone e notebooks, pacote do microsoft office e Linux.
+            </p>
+        </div>
+    </section><!-- fim da sessão de sobre -->
+
+    <!-- sessão de skills -->
+    <section id="skill" class="container-fluid">
+        <div class="row">
+            <figure>
+                <img src="img/icons/skill.svg">
+            </figure>
+        </div>
+        <div class="row">
+            <h1>Habilidades</h1>
+        </div>
+        <hr class="linha1">
+        <hr class="linha2">
+        <br>
+
+        <!-- barras de progresso -->
+        <div class="container">
+            <div class="progress progs">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Photoshop</div>
+            </div>
+            <div class="progress progs">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Illustrator</div>
+            </div>
+            <div class="progress progs">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">FIgma</div>
+            </div>
+            <div class="progress progs">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 65%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">After Effects</div>
+            </div>
+            <div class="progress progs">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Premiere</div>
+            </div>
+            <div class="progress progs">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">InDesign</div>
+            </div>
+            <div class="progress progs">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 98%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Manutenção em Computador</div>
+            </div>
+            <div class="progress progs">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Manutenção em Smartphone</div>
+            </div>
+            <div class="progress progs">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Audition</div>
+            </div>
+            <div class="progress progs">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Adobe XD</div>
+            </div>
+            <div class="progress progs">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">PHP</div>
+            </div>
+            <div class="progress progs">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">MySQL</div>
+            </div>
+            <div class="progress progs">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 65%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">JavaScript</div>
+            </div>
+            <div class="progress progs">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">jQuery</div>
+            </div>
+            <div class="progress progs">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 65%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">SEO</div>
+            </div>
+            <div class="progress progs">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 55%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">BootStrap</div>
+            </div>
+            <div class="progress progs">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Wordpress</div>
+            </div>
+            <div class="progress progs">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Git</div>
+            </div>
+            <div class="progress progs">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">python</div>
+            </div>
+            <div class="progress progs">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 30%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Java</div>
+            </div>
+        </div><!-- fim das barras de progresso -->
+    </section><!-- fim do bloco de skills -->
+
+    <!-- inicio da sessão de contato -->
+    <section id="form" class="container-fluid">
+        <div class="row">
+            <figure>
+                <img src="img/icons/contact.svg">
+            </figure>
+        </div>
+        <div class="row">
+            <h1>Contato</h1>
+        </div>
+        <hr class="linha1">
+        <hr class="linha2">
+        <br>
+        <div class="container-sm">
+            <!-- inicio do formulário / os compos preenchidos serão enviados para uma pagina PHP que vai processar e armazenar os dados -->
+            <form action="salvar_contato.php" method="POST" class="was-validated" id="esconder">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" name="nome" id="nome" placeholder="Seu Nome" required>
+                    <label for="nome">Nome</label>
+                    <div class="invalid-feedback">Campo Obrigatório</div>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" name="telefone" id="telefone" placeholder="Telefone ou WhatsApp" required>
+                    <label for="telefone">Telefone ou WhatsApp</label>
+                    <div class="invalid-feedback">Campo Obrigatório</div>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Endereço de E-mail" required>
+                    <label for="email">E-mail</label>
+                    <div class="invalid-feedback">Campo Obrigatório</div>
+                </div>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Deixe sua mensagem aqui" name="mensagem" id="mensagem" style="height: 100px" required></textarea>
+                    <label for="mensagem">Mensagem</label>
+                </div>
+                <br>
+                <div class="d-grid gap-2">
+                    <button id="liveAlertBtn" class="btn btn-primary" name="salvar" type="submit">Enviar Mensagem</button>
+                </div>
+            </form><!-- Fim do formulário -->
+        </div>
+    </section><!-- fim da sessão de contato -->
+</body>
+</html>

@@ -1,0 +1,201 @@
+/* configuração de cores padrões para texto */
+h1, h2, p{
+    color: #fff; /* definindo cor branca */
+}
+
+/* inicio do bloco responsavel por animar o card de perfil na primeira sessão */
+.slide-in-elliptic-bottom-fwd {
+	animation: slide-in-elliptic-bottom-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-elliptic-bottom-fwd {
+0% {
+    transform: translateY(600px) rotateX(30deg) scale(0);
+    transform-origin: 50% 100%;
+    opacity: 0;
+}
+100% {
+    transform: translateY(0) rotateX(0) scale(1);
+    transform-origin: 50% -1400px;
+    opacity: 1;
+}
+}
+/* fim do bloco de animação do card */
+
+/* bloco de configuração da sessão de perfil */
+#douglas{
+    margin-top: 55px;
+    height: calc(100vh - 60px);
+    background-image: url(../img/code.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+/* bloco de configuração do card de perfil */
+#card_douglas{
+    width: 90%;
+    max-width: 400px;
+    background-color: #252a30cc;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    border: solid #ffffff 1px;
+    padding: 50px 20px;
+}
+
+/* efeito de sombra quando o mouse passa pela sessão de perfil */
+#douglas:hover #card_douglas{
+    box-shadow: #000 1px 1px 10px;
+}
+
+/* classe responsavel por definir a aparencia da imagem dentro do card de perfil */
+.foto{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: solid #ffffff 10px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+/* ajustando a imagem do card de perfil */
+figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* definindo tamanho da imagem do card */
+figure img{
+    width: 300px;
+}
+
+/* ajustando texto principal do card de perfil */
+#card_douglas h1{
+    font-size: 1.8em;
+    margin-bottom: -5px;
+}
+
+/* ajustando o texto de de profissão no card de perfil */
+#card_douglas h2{
+    font-size: 0.8em;
+}
+
+/* ajustando icones de redes sociais do card de perfil */
+.sociais{
+    margin-top: 30px;
+    width: 100%;
+}
+
+/* efeito dos icones do card de perfil */
+.sociais img:hover{
+    filter: invert(0.5);
+
+}
+
+/* definindo efeito no nome principal do card */
+.focus-in-expand {
+	animation: focus-in-expand 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes focus-in-expand {
+0% {
+    letter-spacing: -0.5em;
+    filter: blur(12px);
+    opacity: 0;
+}
+100% {
+    filter: blur(0px);
+    opacity: 1;
+}
+}
+/* fim do efeito */
+
+/* efeito no texto de profissão do card */
+.tracking-in-expand {
+	animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@keyframes tracking-in-expand {
+0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+}
+40% {
+    opacity: 0.6;
+}
+100% {
+    opacity: 1;
+}
+}
+/* fim do efeito */
+
+/* configurando a sessão de sobre */
+#sobre{
+    background-color: #1F2326;
+    padding-top: 30px;
+}
+
+/* configurando a sessão de skills */
+#skill{
+    background-color: #252A30;
+    padding: 50px;
+}
+
+/* ajustando titulos de sessões ao centro da tela */
+#sobre h1, #skill h1, #form h1{
+    text-align: center;
+}
+
+/* definindo tamanho e margens dos icones acima dos titulos de sessões */
+#sobre img, #form img, #skill img{
+    width: 50px;
+    margin-bottom: -10px;
+}
+
+/* configuração de aparencia das linhas abaixo dos titulos de sessão */
+.linha1{
+    width: 12%;
+    height: 5px;
+    margin: auto;
+    margin-bottom: 5px;
+    background-color: #fff;
+    background-image: linear-gradient(to right, #333, #fff, #333);
+}
+.linha2{
+    width: 9%;
+    height: 5px;
+    margin: auto;
+    background-color: #fff;
+    background-image: linear-gradient(to right, #333, #fff, #333);
+}
+/* Fim da configuração de linhas */
+
+/* difinindo a posição do texto de descrição sobre mim */
+.sobre_mim{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 70%;
+    margin: auto;
+}
+
+/* colocando as labels do formulario na cor preta */
+form label{
+    color: #000;
+}
+
+/* definindo fundo e margens do formulario */
+#form{
+    background-color: #1F2326;
+    padding-top: 30px;
+    padding-bottom: 150px;
+}
+
+/* adicionando uma distancia entre cada barra de progresso das skills */
+.progs{
+    margin-top: 15px;
+}
